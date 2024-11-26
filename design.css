@@ -4,6 +4,8 @@
     position: relative;
     justify-content: center;
     justify-items: center;
+    align-content: center;
+    align-items: center;
     grid-template-columns: 340px;
-    grid-template-rows: auto;
+    grid-template-rows: 340px;
 }
