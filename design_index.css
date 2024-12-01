@@ -1,0 +1,495 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+pre { white-space: pre-wrap; }
+
+@font-face {
+    font-family: "scriptTitle";
+    /*src: url("./assets/Starla.ttf") format("truetype");*/
+    src: url("./assets/Milku.otf") format("opentype");
+}
+@font-face {
+    font-family: "scriptBody1";
+    src: url("./assets/Limejuice.ttf") format("truetype");
+}
+@font-face {
+    font-family: "scriptBody2";
+    src: url("./assets/GelPenUpright.ttf") format("truetype");
+}
+@font-face {
+    font-family: "scriptBody3";
+    src: url("./assets/GelPenUprightHeavy.ttf") format("truetype");
+}
+
+.handwrittenTitle {
+    font-family: scriptTitle;
+}
+.handwrittenBody2 {
+    font-family: scriptBody2;
+    font-size: 18px;
+}
+.handwrittenBody3 {
+    font-family: scriptBody3;
+    font-size: 20px;
+}
+
+.textLineHeight100 { line-height: 20%; }
+.textLineHeight140 { line-height: 130%; }
+
+.gridParent {
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    /*background-color: rgba(255, 0, 0, 0.2);*/
+    position: absolute;
+    
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.gridChildBackground {
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    /*background-color: rgba(0, 255, 0, 0.2);*/
+    position: absolute;
+
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+
+    height: 100%;
+    width: 100%;
+}
+
+.imageGrassLoop {
+    position: fixed;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    bottom: 0%;
+    height: 120%;
+    width: auto;
+}
+
+.gridChildClouds {
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    /*background-color: rgba(0, 255, 255, 0.4);*/
+    position: absolute;
+
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+    top: -100px;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+
+    height: auto;
+    width: auto;
+}
+
+.imageClouds {
+    position: fixed;
+
+    left: -50%;
+    top: -5%;
+    height: 50%;
+    width: auto;
+    animation: imageClouds 200s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.imageCloud1 {
+    animation-delay: 0s;
+}
+.imageCloud2 {
+    animation-delay: -40s;
+}
+.imageCloud3 {
+    animation-delay: -80s;
+}
+.imageCloud4 {
+    animation-delay: -120s;
+}
+.imageCloud5 {
+    animation-delay: -160s;
+}
+
+@keyframes imageClouds {
+    from {left: -300px;}
+    to {left: 1400px;}
+}
+
+.gridChildParentContainer {
+    /*background-color: rgba(0, 0, 255, 0.2);*/
+    position: flex;
+    display: grid;
+
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+    height: auto;
+    width: auto;
+}
+
+.gridChildLogo, .gridChildName, .centerCourse {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.gridChildLogo {
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    /*background-color: rgba(255, 255, 0, 0.4);*/
+    position: relative;
+
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+    top: -208px;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+
+    height: auto;
+    width: auto;
+}
+
+.imageLogo {
+    position: relative;
+    display: block;
+
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 7px;
+    border-color: rgba(0, 0, 0, 1.0);
+
+    height: 136px;
+    width: auto;
+}
+
+.gridChildName {
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    /*background-color: rgba(122, 255, 0, 0.2);*/
+    position: relative;
+
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+    font-size: 32px;
+
+    top: -112px;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+
+    height: auto;
+    width: auto;
+}
+
+#divMainMenu {
+    /*background-color: rgba(255, 0, 255, 0.2);*/
+    position: fixed;
+    display: grid;
+    grid-template-columns: 160px;
+    grid-template-rows: auto;
+
+    height: auto;
+    width: auto;
+    
+    margin-top: 0px;
+    top: 180px;
+}
+
+.gridChildMenuOptionsC0 {
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    /*background-color: rgba(255, 0, 255, 0.2);*/
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30px;
+
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+    top: -48px;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+
+    height: auto;
+    width: auto;
+}
+
+.menuCategory {
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    /*background-color: rgba(122, 255, 0, 0.2);*/
+    display: flex;
+
+    height: 32px;
+    width: 400px;
+}
+
+.buttonMenuCategory {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-family: scriptBody2;
+    font-size: 32px;
+}
+
+.menuOptionsC0 {
+    justify-content: center;
+    justify-items: center;
+}
+
+.gridChildMenuOptionsC1 {
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    /*background-color: rgba(255, 0, 255, 0.2);*/
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30px;
+
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+    top: 96px;
+    bottom: 0%;
+    left: -160px;
+    right: 0%;
+
+    height: auto;
+    width: 240px;
+}
+
+.gridChildMenuOptionsC2 {
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    /*background-color: rgba(127, 0, 255, 0.2);*/
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 28px;
+
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+    top: 96px;
+    bottom: 0px;
+    left: 80px;
+    right: 0%;
+
+    height: auto;
+    width: 240px;
+}
+
+.imageBulletMenuCategory {
+    position: relative;
+
+    top: 8px;
+    height: 26px;
+    width: 26px;
+}
+
+.imageBullet {
+    position: relative;
+
+    top: 4px;
+    height: 22px;
+    width: 22px;
+}
+
+.menuOptions {
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    /*background-color: rgba(122, 255, 0, 0.2);*/
+    display: flex;
+
+    height: 28px;
+    width: 240px;
+}
+
+.buttonMenuOptions {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-family: scriptBody2;
+    font-size: 24px;
+    line-height: 0px;
+    max-inline-size: 100%;
+}
+.buttonMenuOptions:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.menuOptionsC1 {
+    justify-content: flex-start;
+    justify-items: flex-start;
+}
+.menuOptionsC2 {
+    justify-content: flex-end;
+    justify-items: flex-end;
+}
+
+#divBiography {
+    /*background-color: rgba(255, 0, 255, 0.2);*/
+    position: fixed;
+    display: grid;
+
+    margin-top: 200%;
+    top: 164px;
+
+    height: auto;
+    width: auto;
+}
+
+.biographyColumn1 {
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    /*background-color: rgba(255, 0, 0, 0.2);*/
+    position: relative;
+    text-align: justify;
+    justify-content: right;
+
+    top: 56px;
+    bottom: 0%;
+    left: -105%;
+    right: 0%;
+
+    height: 284px;
+    width: 420px;
+}
+
+.biographyColumn2 {
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    /*background-color: rgba(0, 255, 0, 0.2);*/
+    position: relative;
+    text-align: justify;
+    justify-content: right;
+
+    top: 56px;
+    bottom: 0%;
+    left: 0px;
+    right: 0%;
+
+    height: 284px;
+    width: 420px;
+}
+
+.biographyColumn3 {
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    /*background-color: rgba(0, 0, 255, 0.2);*/
+    position: relative;
+    text-align: justify;
+    justify-content: right;
+
+    top: 56px;
+    bottom: 0%;
+    left: 105%;
+    right: 0%;
+
+    height: 256px; /*256*/
+    width: 420px;
+}
+
+.biographyColumn2Image{
+    /*background-color: rgba(0, 255, 0, 0.2);*/
+    display: flex;
+    float: left;
+    clear: left;
+
+    margin-top: -4px;
+    margin-left: -8px;
+    margin-right: 8px;
+
+    height: 128px;
+    width: 136px;
+}
+.biographyColumn3Image{
+    /*background-color: rgba(0, 0, 255, 0.2);*/
+    display: flex;
+    float: right;
+    clear: right;
+    align-items: flex-end;
+    shape-outside: inset(calc(100% - 128px) 0 0);
+
+    height: 100%;
+    width: 136px;
+}
+
+.imageKeyboardPress {
+    position: relative;
+    display: absolute;
+
+    height: 136px;
+    width: auto;
+}
+.imageWritingQuill {
+    position: relative;
+    display: absolute;
+
+    height: 136px;
+    width: auto;
+}
+
+.menuBiographyExit {
+    position: relative;
+
+    top: 26px;
+    left: 105%;
+}
+
+#divFooterIcons {
+    background-color: rgba(255, 0, 255, 0.2);
+    position: fixed;
+
+    height: 64px;
+    width: 400px;
+    
+    margin-top: 0px;
+    top: 0px;
+}
+
+.footerRow {
+    /*background-color: rgba(255, 0, 255, 0.2);*/
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    top: 216px;
+
+    height: 24px;
+    width: 280px;
+}
+
+.imageFooterIcon {
+    position: relative;
+    filter: opacity(33%);
+
+    height: 24px;
+    width: 24px;
+}
